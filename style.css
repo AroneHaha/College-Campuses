@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----------------- HEADER ------------------ */
+.header{
+    min-height: 100vh;
+    width: 100% ;
+    background-image: linear-gradient(rgba(5,9,30,0.7), rgba(4,9,30,0.7)), url(images/sti_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position:  relative;
+} 
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(-50%, -5);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 13px 30px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #FFEA00;
+    background: #FFEA00;
+    color: black;
+    transition: 0.8s;
+}
+
+/* ------------------- COURSES --------------------------- */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.course h1{
+    margin-top: 75px;
+    font-size: 37px;
+    font-weight: 690;
+}
+
+.facilities h1{
+    margin-top: 75px;
+    font-size: 37px;
+    font-weight: 690;
+}
+
+.campus h1{
+    margin-top: 75px;
+    font-size: 37px;
+    font-weight: 690;
+}
+
+p{
+    color: #36454F;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.all-courses{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 30%;
+    background-color:rgba(252, 249, 197, 0.5);
+    border-radius: 0%;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.course-col:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+/* -------------------------------- CAMPUS ------------------------------------ */
+.campus{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.campus-col{
+    flex-basis: 31%;
+    top: 0;
+    bottom: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus img{
+    display: block;
+    width: 91%;
+    height: 85%;
+    border-radius: 25px;
+    margin-left: 26px;
+}
+
+.row{
+    max-width:3000px;
+    margin: 0;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.layer{
+    background: transparent;
+    height: 85%;
+    width: 91%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    overflow: hidden;
+    background: rgba(100, 149, 237, 0.7);
+}
+
+.layer h3{
+    font-size: 33px;
+    font-weight: 690;
+    width: 91%;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 10%;
+    opacity: 1;
+}
+
+/* ----------------------------- FACILITIES ---------------------------------- */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 0px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 27px;
+}
+
+.facilities img{
+    width: 100%;
+    height: 65%;
+    margin: auto;
+    display: block;
+    border-radius: 6%;
+}
+
+.facilities .row p{
+    margin-bottom: 230px;
+    margin-left: 0px;
+}
+
+.facilities h1 {
+    margin-left: 30px;
+}
+
+.facilities p {
+    margin-left: 25px;
+}
+
+/* --------------------------------------- TESTIMONIALS ---------------------------------------- */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.test-col{
+    flex-basis: 38%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    margin-left: 35px;
+    text-align: left;
+    background-color: #ffeeee;
+    padding: 23px;
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+.test-col img{
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.test-col p{
+    padding: 0;
+}
+
+.test-col h3{
+    margin-top: 15px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.test-col:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/stibanner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    font-size: 20px;
+}
+
+.cta h1{
+    color: #ffffff;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+/* ----------------------------------- FOOTER --------------------------------------------- */
+
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer .icons{
+    color: black;
+}
+
+.footer a{
+    padding: 15px 6px;
+}
+
+/* -------------------------------- ABOUT PAGE -------------------------------------------- */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,40,0.7), rgba(4,9,30,0.7)),url(images/stiabout.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    font-size: 47px;
+    font-size: 40px;
+    padding: 0px;
+}
+
+.about-col p{
+    padding: 15px 0 13px;
+}
+
+.red-btn{
+    border: 1px solid black;
+    color: black;
+    margin-top: 3%;
+    margin-left: 26%;
+}
+
+/* --------------------------- COURSE PAGE ----------------------------------- */
+.course-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,40,0.7), rgba(4,9,30,0.7)),url(images/coursesti.webp);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+/* ---------------------------------- BLOG ------------------------------------ */
+.blog-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,40,0.7), rgba(4,9,30,0.7)),url(images/blog1.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog-left{
+    flex-basis: 65%;
+    
+}
+
+.blog-left p{
+    padding: 0;
+}
+
+.blog-left img{
+    width: 100%;
+}
+
+.blog-left h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.blog-right{
+    flex-basis: 32%;
+    margin-left: 40px;
+    background: rgba(200, 200, 200, 0.3);
+    height: 100%;
+}
+.blog-right h3{
+    background-color: rgb(11, 121, 255);
+    color: white;
+    padding: 7px 0;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-right span{
+    padding: 0;
+} 
+
+.blog-right div{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    padding: 11px 15px;
+    box-sizing: border-box;
+}
+
+.blog-btn{
+    border: 1px solid rgb(255, 132, 31);
+    background: transparent;
+    color: rgb(255, 132, 31);
+    margin: 2% 41% 1%;
+}
+
+.blog-btn:hover{
+    border: 1px solid rgb(255, 132, 31);
+    background: rgb(255, 132, 31);
+    color: black;
+    transition: 0.8s;
+}
+
+.comment-box{
+    border: 1px solid black;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3{
+    text-align: left;
+    font-size: 21px;
+
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: gainsboro;
+}
+
+
+/* ---------------------------------- CONTACT ------------------------------------ */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 32px;
+    margin: 10px;
+    color: rgb(252, 88, 0);
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+    
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-btn{
+    border: 1px solid rgb(255, 132, 31);
+    color: rgb(255, 132, 31);
+    margin-top: 3%;
+    margin-left: 26%;
+    background: transparent;
+}
+
+.contact-btn:hover{
+    border: 1px solid rgb(255, 132, 31);
+    background: rgb(255, 132, 31);
+    color: black;
+    transition: 0.8s;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.contact-col button{
+    margin-left: 0;
+}
+
+.contact-col h2{
+    margin-bottom: 15px;
+}
+
+.location h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,40,0.7), rgba(4,9,30,0.7)),url(images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
